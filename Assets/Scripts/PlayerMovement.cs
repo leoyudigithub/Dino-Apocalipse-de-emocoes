@@ -24,7 +24,8 @@ public class PlayerMovement : MonoBehaviour
         moveV = Input.GetAxis("Vertical") * speed;
 
         rb.linearVelocity = new Vector2(moveH, moveV);
-       
+        
+        
 
      
     }
