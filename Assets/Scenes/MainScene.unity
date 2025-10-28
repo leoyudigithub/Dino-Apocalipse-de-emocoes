@@ -1110,6 +1110,10 @@ PrefabInstance:
       propertyPath: pontoAtaque
       value: 
       objectReference: {fileID: 1856060615}
+    - target: {fileID: 1282399623646602235, guid: 24fdf23d8fca63844890dcb96c50cf3c, type: 3}
+      propertyPath: particulasAtaque
+      value: 
+      objectReference: {fileID: 6293784924333465020, guid: 7d0694cec86c2e34c9eed1d533a0e363, type: 3}
     - target: {fileID: 1995762223212603965, guid: 24fdf23d8fca63844890dcb96c50cf3c, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -1124,7 +1128,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2394911596369236912, guid: 24fdf23d8fca63844890dcb96c50cf3c, type: 3}
       propertyPath: m_Size.x
-      value: 1.5985208
+      value: 2.2729135
       objectReference: {fileID: 0}
     - target: {fileID: 2394911596369236912, guid: 24fdf23d8fca63844890dcb96c50cf3c, type: 3}
       propertyPath: m_Size.y
@@ -1132,7 +1136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2394911596369236912, guid: 24fdf23d8fca63844890dcb96c50cf3c, type: 3}
       propertyPath: m_Offset.x
-      value: 0.235849
+      value: -0.10134721
       objectReference: {fileID: 0}
     - target: {fileID: 2394911596369236912, guid: 24fdf23d8fca63844890dcb96c50cf3c, type: 3}
       propertyPath: m_Offset.y

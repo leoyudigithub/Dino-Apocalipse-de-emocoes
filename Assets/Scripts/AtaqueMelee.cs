@@ -6,6 +6,7 @@ public class AtaqueMelee : MonoBehaviour
     public float alcance = 1f; // Raio da área de ataque
     public Transform pontoAtaque; // Posição de onde o ataque parte
     public LayerMask inimigoLayer; // Quais objetos podem ser atingidos
+    public GameObject particulasAtaque; // arraste o prefab aqui no Inspector
 
     void Update()
     {
@@ -24,6 +25,13 @@ public class AtaqueMelee : MonoBehaviour
         {
             // Chama o método ReceberDano no script Vida do inimigo
             inimigo.GetComponent<Vida>()?.ReceberDano(dano);
+        }
+
+        if (particulasAtaque != null)
+        {
+            // Instancia no ponto de ataque, na rotação do player
+            GameObject fx = Instantiate(particulasAtaque, pontoAtaque.position, pontoAtaque.rotation);
+            Destroy(fx, 0.5f); // destrói depois de meio segundo
         }
 
         Debug.Log("Ataque Melee executado!");
