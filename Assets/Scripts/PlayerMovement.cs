@@ -24,6 +24,20 @@ public class PlayerMovement : MonoBehaviour
         moveV = Input.GetAxis("Vertical") * speed;
 
         rb.linearVelocity = new Vector2(moveH, moveV);
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+
+        //flip o sprite
+        if( moveH > 0 )
+        {
+            
+            sprite.flipX = true;
+            
+            
+        }
+        else if( moveH < 0 )
+        {
+            sprite.flipX = false;
+        }
         
         
 
