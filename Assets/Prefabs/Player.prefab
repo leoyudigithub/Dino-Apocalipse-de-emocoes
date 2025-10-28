@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 3827624260109686745}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.9, y: 0.38, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.3967, y: 0.328, z: 0}
+  m_LocalScale: {x: 12.484868, y: 12.484868, z: 12.484868}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,6 +57,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -78,10 +80,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -647965093998837493, guid: 290d21d002e586d4886119f750940117, type: 3}
+  m_Sprite: {fileID: -1193820911090328509, guid: f5d9e41f67b99fd488d64ffaee29278f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,6 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  pontoAtaque: {fileID: 0}
 --- !u!61 &2394911596369236912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -166,17 +170,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.07362437, y: -0.014805198}
+  m_Offset: {x: 0.00017347932, y: -0.0013093501}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.56, y: 2.52}
+    oldSize: {x: 0.17, y: 0.19}
     newSize: {x: 10.24, y: 10.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9079404, y: 2.3561919}
+  m_Size: {x: 0.14878163, y: 0.17020947}
   m_EdgeRadius: 0
 --- !u!114 &2224672632319590791
 MonoBehaviour:
@@ -209,3 +213,4 @@ MonoBehaviour:
   inimigoLayer:
     serializedVersion: 2
     m_Bits: 4294967295
+  particulasAtaque: {fileID: 0}
