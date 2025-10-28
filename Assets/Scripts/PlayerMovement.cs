@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private float moveH, moveV;
     //public Animator animator;
     public float speed = 2f;
+    
 
     private void Start()
     {

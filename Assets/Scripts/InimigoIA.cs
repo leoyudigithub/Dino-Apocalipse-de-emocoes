@@ -16,7 +16,7 @@ public class InimigoIA : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (player == null) return;
 
