@@ -31,13 +31,8 @@ Transform:
   m_GameObject: {fileID: 3827624260109686745}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: -4.3967, y: 0.328, z: 0}
-  m_LocalScale: {x: 12.484868, y: 12.484868, z: 12.484868}
-=======
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
->>>>>>> 3913c79409427b3ea0dc520a061d1927f4206c4d
+  m_LocalScale: {x: 11.649629, y: 11.649629, z: 11.649629}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -89,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -1193820911090328509, guid: f5d9e41f67b99fd488d64ffaee29278f, type: 3}
+  m_Sprite: {fileID: -4782104476085066544, guid: f5d9e41f67b99fd488d64ffaee29278f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126,7 +121,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &7287948776969221707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  pontoAtaque: {fileID: 0}
+  pontoAtaque: {fileID: 2223184542982844826, guid: 74e262a189adb9a4cbcaa13afa28f349, type: 3}
 --- !u!61 &2394911596369236912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -175,17 +170,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.00017347932, y: -0.0013093501}
+  m_Offset: {x: -0.0015838817, y: 0.0032268912}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.17, y: 0.19}
+    oldSize: {x: 0.15, y: 0.17}
     newSize: {x: 10.24, y: 10.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.14878163, y: 0.17020947}
+  m_Size: {x: 0.15579088, y: 0.17729288}
   m_EdgeRadius: 0
 --- !u!114 &2224672632319590791
 MonoBehaviour:
@@ -213,9 +208,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dano: 1
-  alcance: 1
+  alcance: 0.75
   pontoAtaque: {fileID: 2223184542982844826, guid: 74e262a189adb9a4cbcaa13afa28f349, type: 3}
   inimigoLayer:
     serializedVersion: 2
     m_Bits: 4294967295
-  particulasAtaque: {fileID: 0}
+  particulasAtaque: {fileID: 6293784924333465020, guid: 7d0694cec86c2e34c9eed1d533a0e363, type: 3}
