@@ -7,6 +7,7 @@ public class AtaqueMelee : MonoBehaviour
     public Transform pontoAtaque; // Posição de onde o ataque parte
     public LayerMask inimigoLayer; // Quais objetos podem ser atingidos
     public GameObject particulasAtaque; // arraste o prefab aqui no Inspector
+    public Animator animator;
 
     void Update()
     {
@@ -20,11 +21,16 @@ public class AtaqueMelee : MonoBehaviour
         // Verifica todos os inimigos dentro de um círculo (área de ataque)
         Collider2D[] inimigos = Physics2D.OverlapCircleAll(pontoAtaque.position, alcance, inimigoLayer);
 
+        animator.SetTrigger("Attack_trigger");
+
         // Aplica dano a todos os inimigos atingidos
         foreach (Collider2D inimigo in inimigos)
         {
             // Chama o método ReceberDano no script Vida do inimigo
             inimigo.GetComponent<Vida>()?.ReceberDano(dano);
+
+
+
         }
 
         if (particulasAtaque != null)
